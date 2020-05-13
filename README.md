@@ -19,7 +19,7 @@ Whose contents are ficked up from Google's GDE Platform.
 
 - [Velocity X ](https://velocityx.dev/) this is a open source package developed by [Pawan Kumar](https://github.com/iampawan),
 
-## THIS IS JUST A DEMONSTRATION PUBLISHED FOR JUST REFERNCES.
+## THIS IS JUST A DEMONSTRATION PUBLISHED FOR JUST REFERENCES.
 
 
 ## Contributions are highly Appricated, you can clone and add modification as per you want, and send a pull request, i will verify it if it has no error.
