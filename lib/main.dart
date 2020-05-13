@@ -126,11 +126,7 @@ class _DataShowState extends State<DataShow> {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: calling
-                    .getBio()
-                    .text
-                    .size(15)
-                    .make(),
+                child: calling.getBio().text.size(15).make(),
               ),
             ],
           ),
