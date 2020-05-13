@@ -10,7 +10,7 @@ Whose contents are ficked up from Google's GDE Platform.
 
 # Demo APK
 
-- [Click here to download Demo Apk](https://github.com/ujjwalsittu/firstTask_qurantine_classes/releases/download/1.0/app-debug.apk)
+- [Click here to download Demo Apk]Comming Soon
 
 
 
