@@ -3,6 +3,7 @@ import 'package:velocity_x/velocity_x.dart';
 import 'brain.dart';
 
 int indexP = 0;
+
 void main() {
   runApp(MyApp());
 }
@@ -65,14 +66,22 @@ class DataShow extends StatefulWidget {
 
 class _DataShowState extends State<DataShow> {
   Brain calling = Brain();
+
+  int imgBot() {
+    int imgg = calling.getImageUrl();
+    return imgg;
+  }
+
   @override
   Widget build(BuildContext context) {
+    int pp = imgBot();
     return Column(
       children: <Widget>[
         "Google Developer Experts in Flutter".text.bold.size(20).make(),
         SizedBox(
           height: 10,
         ),
+
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -93,14 +102,13 @@ class _DataShowState extends State<DataShow> {
         SizedBox(
           height: 20,
         ),
+
         Center(
           child: Column(
             children: <Widget>[
               CircleAvatar(
                 maxRadius: 90,
-                backgroundImage: NetworkImage(
-                  calling.getImageUrl(),
-                ),
+                backgroundImage: AssetImage('assets/$pp.png'),
               ),
               SizedBox(
                 height: 10,

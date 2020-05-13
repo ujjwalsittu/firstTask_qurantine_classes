@@ -1,10 +1,9 @@
 class Call {
-  String picUrl;
   String names;
   String bio;
-  Call({String p, String n, String b}) {
-    picUrl = p;
+
+  Call({String n, String b}) {
     names = n;
-    bio=b;
+    bio = b;
   }
 }
