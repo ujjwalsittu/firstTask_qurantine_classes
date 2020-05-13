@@ -2,6 +2,7 @@
 
 This Git Repo is published by Ujjwal Sittu. For the first task given in Qurantine Classes.
 
+![Build Status](https://badgen.net/badge/Building/Success/green)
 
 ## Getting Started
 
