@@ -1,6 +1,6 @@
-# FIRST TASK OF QURANTINE CLASSES BY UJJWAL
+# TASK'S OF QURANTINE CLASSES BY UJJWAL
 
-This Git Repo is published by Ujjwal Sittu. For the first task given in Qurantine Classes.
+This Git Repo is published by Ujjwal Sittu. For the task given in Qurantine Classes.
 
 ![Build Status](https://badgen.net/badge/Building/Success/green)
 
