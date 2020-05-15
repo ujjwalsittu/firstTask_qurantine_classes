@@ -8,29 +8,36 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'First Task By Ujjwal',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: ThemeData.dark(),
       home: MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Task 1 By Ujjwal"),
-        actions: <Widget>[Icon(Icons.person)],
+        leading: FlutterLogo(),
       ),
       body: SingleChildScrollView(
         child: SafeArea(
@@ -51,6 +58,58 @@ class MyHomePage extends StatelessWidget {
               DataShow(), // Show Data here
             ],
           ),
+        ),
+      ),
+      endDrawer: Drawer(
+        elevation: 20.0,
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: UserAccountsDrawerHeader(
+                accountName: "Ujjwal Kumar Sittu".text.make(),
+                accountEmail: "hello@ujjwalsittu.in".text.make(),
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      'https://musocial-assets.s3.amazonaws.com/upload/photos/2020/05/cnHX49aOAtjRvGfgtG1F_04_73be8eee9f74d4f12bd9c661e59f5231_avatar_full.jpg'),
+                ),
+                otherAccountsPictures: <Widget>[
+                  CircleAvatar(
+                    backgroundImage: NetworkImage(
+                        'https://musocial-assets.s3.amazonaws.com/upload/photos/2020/05/Zy9ElrfXyFDDq49CCn7V_03_67b311673a383395bf5172a1ce7f9b8f_avatar_full.jpeg'),
+                  ),
+                  CircleAvatar(
+                    backgroundImage: NetworkImage(
+                        'https://musocial-assets.s3.amazonaws.com/upload/photos/2020/04/cug7VN6WOSz8PWhIduu1_28_290401dd0fac004f5044e42ef863f819_avatar_full.jpg'),
+                  )
+                ],
+              ),
+              decoration: BoxDecoration(
+                color: Colors.black26,
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.android),
+              title: Text('Google GDE\'s'),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+            Divider(
+              height: 2.0,
+            ),
+            ListTile(
+              title: Text('About Me'),
+              leading: Icon(Icons.person),
+              onTap: () {
+                // Update the state of the app.
+                // ...
+              },
+            ),
+          ],
         ),
       ),
     );
